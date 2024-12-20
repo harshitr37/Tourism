@@ -1,0 +1,63 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/o.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<script>
+function fun ()
+{
+var form= document.reg;
+if(form.fname.value=="")
+{
+alert("Enter User ID");
+}
+else if(form.password.value=="")
+{
+alert("Enter Password");
+}
+else
+{
+alert("LOGIN Successfully");
+}
+}
+
+</script>
+<header>
+
+<nav>
+<div class="logo"> <h1 class="animate__animated animate__heartBeat"> INCREDIBLE INDIA </h1> </div>
+<div class="menu">
+<a href="index.html"class="btn">Home</a>
+<a href="s.html" target="_blank" class="btn">Gallery</a>
+<a href="#"class="btn">About</a>
+<a href="#"class="btn">Contact</a>
+</div>
+
+</nav>
+
+<div class="main">
+<div class="register">
+<h2> SignUp Here </h2>
+<form id="register" method="post" name="reg">
+<label>User Id : </label>
+<br>
+<input type="text" name="fname" id="name" placeholder="Enter Your Valid ID" required>
+<br><br>
+<label>Password : </label>
+<br>
+<input type="password" name="password" id="name" placeholder="Enter Your Valid Password" required>
+<br><br>
+<p> Dont have an Account ? <a href="in.html" style="text-decoration: none; color:#fff;">SignUp </a></p>
+<br><br>
+<center><input type="submit" value="Login" name="submit" id="submit" onclick="fun()"></center>
+
+</div>
+</div>
+</header>
+
+
+</body>
+</html>

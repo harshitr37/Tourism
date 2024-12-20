@@ -1,0 +1,85 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/st.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<script>
+function validation ()
+{
+var form= document.reg;
+if(form.fname.value=="")
+{
+alert("Enter First Name");
+}
+else if(form.lname.value=="")
+{
+alert("Enter Last Name");
+}
+else if(form.email.value=="")
+{
+alert("Enter Email Id");
+}
+else if(form.password.value=="")
+{
+alert("Enter Password");
+}
+else if(form.number.value=="")
+{
+alert("Enter Number");
+}
+else
+{
+alert("SignUp Successfully");
+}
+}
+</script>
+
+<header>
+
+<nav>
+<div class="logo"> <h1 class="animate__animated animate__heartBeat"> INCREDIBLE INDIA </h1> </div>
+<div class="menu">
+<a href="index.html"class="btn">Home</a>
+<a href="s.html" target="_blank"class="btn">Gallery</a>
+<a href="#"class="btn">About</a>
+<a href="#"class="btn">Contact</a>
+</div>
+
+</nav>
+
+<div class="main">
+<div class="register">
+<h2> SignUp Here </h2>
+<form id="register" method="post" name="reg">
+<label>First Name : </label>
+<br>
+<input type="text" name="fname" id="name" placeholder="Enter Your First Name" required>
+<br><br>
+<label>Last Name : </label>
+<br>
+<input type="text" name="lname" id="name" placeholder="Enter Your Last Name" required>
+<br><br>
+<label>Email : </label>
+<br>
+<input type="email" name="email" id="name" placeholder="Enter Your Valid Email" required>
+<br><br>
+<label>Password : </label>
+<br>
+<input type="password" name="password" id="name" placeholder="Enter Your Valid Password" required>
+<br><br>
+<label>Contact No : </label>
+<br>
+<input type="number" name="number" id="name" placeholder="Enter Your Number" maxlength="10" required>
+<br><br>
+<center><input type="submit" value="SignUp" name="submit" id="submit" onclick="validation()"></center>
+
+</div>
+</div>
+</header>
+
+
+</body>
+</html>
